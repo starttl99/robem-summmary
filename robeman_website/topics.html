@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주제별 콘텐츠 - 로브맨 유튜브 채널 아카이브</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>ROBE MAN</h1>
+                <p class="tagline">로브맨이 펼치는 유튜브 이야기</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">로브맨 소개</a></li>
+                    <li><a href="seasons.html">시즌별 콘텐츠</a></li>
+                    <li><a href="topics.html" class="active">주제별 콘텐츠</a></li>
+                    <li><a href="insights.html">인사이트</a></li>
+                    <li><a href="popular.html">인기 콘텐츠</a></li>
+                    <li><a href="resources.html">자료실</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button type="submit">검색</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>주제별 콘텐츠</h1>
+            <p>로브맨 채널의 주제별 영상 모음</p>
+        </div>
+    </section>
+
+    <section class="topics-overview">
+        <div class="container">
+            <div class="topic-filter">
+                <button class="topic-filter-btn active" data-filter="all">전체</button>
+                <button class="topic-filter-btn" data-filter="media">미디어/플랫폼</button>
+                <button class="topic-filter-btn" data-filter="tech">기술/과학</button>
+                <button class="topic-filter-btn" data-filter="history">역사/신화</button>
+                <button class="topic-filter-btn" data-filter="conspiracy">음모론/미스터리</button>
+                <button class="topic-filter-btn" data-filter="religion">종교/영성</button>
+                <button class="topic-filter-btn" data-filter="politics">시사/정치</button>
+            </div>
+
+            <div class="topic-content-grid">
+                <!-- 미디어/플랫폼 -->
+                <div class="topic-video-card" data-topic="media">
+                    <div class="video-thumbnail">
+                        <img src="images/video1-1.jpg" alt="로브맨의 유튜브이야기, 창업자, 변천사 탈통제미디어시대, 포털의 한계">
+                        <span class="video-duration">25:12</span>
+                        <span class="video-season">시즌 1</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>로브맨의 유튜브이야기, 창업자, 변천사 탈통제미디어시대, 포털의 한계</h3>
+                        <p class="video-meta">조회수 15K</p>
+                        <p class="video-desc">로브맨의 유튜브이야기, 첫번째 에피소드 유튜브의 창업자. 유튜브의 변천사 유튜브와 탈통제미디어 포털의 한계.</p>
+                        <a href="https://www.youtube.com/watch?v=Lh5hy9n_Doo" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+
+                <div class="topic-video-card" data-topic="media">
+                    <div class="video-thumbnail">
+                        <img src="images/video1-2.jpg" alt="로브맨의 유튜브와 가상현실, 유튜브는 구글 인공지능의 기반빅데이터">
+                        <span class="video-duration">24:30</span>
+                        <span class="video-season">시즌 1</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>로브맨의 유튜브와 가상현실, 유튜브는 구글 인공지능의 기반빅데이터</h3>
+                        <p class="video-meta">조회수 12K</p>
+                        <p class="video-desc">유튜브와 가상현실의 관계, 그리고 구글 인공지능의 기반이 되는 빅데이터로서의 유튜브에 대해 다룹니다.</p>
+                        <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+
+                <!-- 기술/과학 -->
+                <div class="topic-video-card" data-topic="tech">
+                    <div class="video-thumbnail">
+                        <img src="images/video2-1.jpg" alt="로브맨 시즌 1,2 의 가이드 해설편">
+                        <span class="video-duration">13:02</span>
+                        <span class="video-season">시즌 2</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>로브맨 시즌 1,2 의 가이드 해설편</h3>
+                        <p class="video-meta">조회수 18K</p>
+                        <p class="video-desc">시즌3에 앞서 로브맨 시즌 1,2 의 가이드 해설편을 올립니다. 보시는데 참고하시면 좋겠습니다.</p>
+                        <a href="https://www.youtube.com/watch?v=G0HMZpNkWmo" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+
+                <div class="topic-video-card" data-topic="tech">
+                    <div class="video-thumbnail">
+                        <img src="images/video5-1.jpg" alt="바빌론과 AI, 타락천사가 된 세라핌">
+                        <span class="video-duration">27:26</span>
+                        <span class="video-season">시즌 5</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>바빌론과 AI, 타락천사가 된 세라핌</h3>
+                        <p class="video-meta">조회수 13K</p>
+                        <p class="video-desc">AI 기술의 발전과 종교적 관점에서의 해석을 다룬 영상입니다.</p>
+                        <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+
+                <!-- 역사/신화 -->
+                <div class="topic-video-card" data-topic="history">
+                    <div class="video-thumbnail">
+                        <img src="images/video3-1.jpg" alt="고대 문명과 비밀결사">
+                        <span class="video-duration">28:45</span>
+                        <span class="video-season">시즌 3</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>고대 문명과 비밀결사</h3>
+                        <p class="video-meta">조회수 11K</p>
+                        <p class="video-desc">고대 문명의 발전과 비밀결사의 역할에 대한 역사적 고찰을 담은 영상입니다.</p>
+                        <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+
+                <!-- 음모론/미스터리 -->
+                <div class="topic-video-card" data-topic="conspiracy">
+                    <div class="video-thumbnail">
+                        <img src="images/video4-1.jpg" alt="현대 사회와 음모론">
+                        <span class="video-duration">30:18</span>
+                        <span class="video-season">시즌 4</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>현대 사회와 음모론</h3>
+                        <p class="video-meta">조회수 14K</p>
+                        <p class="video-desc">현대 사회에서 음모론이 갖는 의미와 영향력에 대해 분석한 영상입니다.</p>
+                        <a href="https://www.youtube.com/watch?v=example4" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+
+                <!-- 종교/영성 -->
+                <div class="topic-video-card" data-topic="religion">
+                    <div class="video-thumbnail">
+                        <img src="images/video5-2.jpg" alt="엘로힘과 세라핌">
+                        <span class="video-duration">26:54</span>
+                        <span class="video-season">시즌 5</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>엘로힘과 세라핌</h3>
+                        <p class="video-meta">조회수 12K</p>
+                        <p class="video-desc">종교적 관점에서 엘로힘과 세라핌의 의미와 현대적 해석을 다룬 영상입니다.</p>
+                        <a href="https://www.youtube.com/watch?v=example5" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+
+                <!-- 시사/정치 -->
+                <div class="topic-video-card" data-topic="politics">
+                    <div class="video-thumbnail">
+                        <img src="images/video4-2.jpg" alt="현대 정치와 미디어의 역할">
+                        <span class="video-duration">29:37</span>
+                        <span class="video-season">시즌 4</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>현대 정치와 미디어의 역할</h3>
+                        <p class="video-meta">조회수 10K</p>
+                        <p class="video-desc">현대 정치 환경에서 미디어가 어떤 역할을 하는지 분석한 영상입니다.</p>
+                        <a href="https://www.youtube.com/watch?v=example6" target="_blank" class="btn secondary-btn">유튜브에서 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topic-insights">
+        <div class="container">
+            <h2 class="section-title">주제별 인사이트</h2>
+            
+            <div class="topic-insights-grid">
+                <div class="topic-insight-card">
+                    <div class="topic-icon media-icon"></div>
+                    <h3>미디어/플랫폼</h3>
+                    <p>로브맨 채널은 유튜브라는 플랫폼이 가져온 미디어 환경의 변화를 심도 있게 분석합니다. 기존 포털 중심의 정보 전달 방식에서 벗어나 개인 크리에이터가 직접 대중과 소통하는 새로운 미디어 환경이 형성되었음을 강조합니다.</p>
+                    <a href="insights.html#media" class="read-more">더 읽기</a>
+                </div>
+                
+                <div class="topic-insight-card">
+                    <div class="topic-icon tech-icon"></div>
+                    <h3>기술/과학</h3>
+                    <p>가상현실과 인공지능 기술의 발전이 가져올 사회적, 문화적 변화에 초점을 맞춥니다. 기술의 발전 속도가 빨라지면서 인간의 삶과 사회 구조가 어떻게 변화할 것인지, 그리고 이러한 변화에 어떻게 대응해야 할지에 대한 깊이 있는 고찰을 제공합니다.</p>
+                    <a href="insights.html#tech" class="read-more">더 읽기</a>
+                </div>
+                
+                <div class="topic-insight-card">
+                    <div class="topic-icon history-icon"></div>
+                    <h3>역사/신화</h3>
+                    <p>고대 문명과 신화적 내러티브를 현대적 관점에서 재해석합니다. 역사적 사건과 신화적 이야기가 현대 사회와 어떻게 연결되는지, 그리고 이를 통해 우리가 어떤 통찰을 얻을 수 있는지 탐구합니다.</p>
+                    <a href="insights.html#history" class="read-more">더 읽기</a>
+                </div>
+                
+                <div class="topic-insight-card">
+                    <div class="topic-icon conspiracy-icon"></div>
+                    <h3>음모론/미스터리</h3>
+                    <p>다양한 음모론과 미스터리를 단순한 흥미 유발을 넘어 비판적 사고를 촉진하는 도구로 활용합니다. 음모론이 사회적으로 어떤 기능을 하며, 어떤 위험성을 가지고 있는지 균형 있는 시각에서 분석합니다.</p>
+                    <a href="insights.html#conspiracy" class="read-more">더 읽기</a>
+                </div>
+                
+                <div class="topic-insight-card">
+                    <div class="topic-icon religion-icon"></div>
+                    <h3>종교/영성</h3>
+                    <p>종교적, 영적 개념과 현대 기술의 접점을 탐구합니다. 특히 AI 기술의 발전과 종교적 세계관의 충돌, 그리고 이를 통해 제기되는 인간 존재의 본질과 의미에 대한 근본적인 질문을 다룹니다.</p>
+                    <a href="insights.html#religion" class="read-more">더 읽기</a>
+                </div>
+                
+                <div class="topic-insight-card">
+                    <div class="topic-icon politics-icon"></div>
+                    <h3>시사/정치</h3>
+                    <p>현대 정치 환경과 미디어의 관계, 그리고 이것이 사회적 담론 형성에 미치는 영향을 분석합니다. 특히 디지털 미디어 환경에서 정치적 의견 형성과 확산 과정의 변화에 주목합니다.</p>
+                    <a href="insights.html#politics" class="read-more">더 읽기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>ROBE MAN</h2>
+                    <p>로브맨이 펼치는 유튜브 이야기</p>
+                </div>
+                <div class="footer-links">
+                    <h3>바로가기</h3>
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="about.html">로브맨 소개</a></li>
+                        <li><a href="seasons.html">시즌별 콘텐츠</a></li>
+                        <li><a href="topics.html">주제별 콘텐츠</a></li>
+                        <li><a href="insights.html">인사이트</a></li>
+                        <li><a href="popular.html">인기 콘텐츠</a></li>
+                        <li><a href="resources.html">자료실</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>소셜 미디어</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCTTqmxp7S5NE6TcJJlTZTsQ" target="_blank">유튜브</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 로브맨 아카이브. 이 웹사이트는 로브맨 유튜브 채널의 비공식 아카이브입니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 주제별 필터링 기능
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.topic-filter-btn');
+            const videoCards = document.querySelectorAll('.topic-video-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 모든 버튼 비활성화
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // 클릭한 버튼 활성화
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    videoCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            if (card.getAttribute('data-topic') === filter) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

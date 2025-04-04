@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로브맨 웹사이트 테스트</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .test-panel {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            overflow-y: auto;
+            z-index: 9999;
+            font-family: monospace;
+            font-size: 12px;
+            border-top-left-radius: 10px;
+        }
+        .test-panel h2 {
+            margin-top: 0;
+            font-size: 14px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+        .test-panel .test-controls {
+            margin-bottom: 10px;
+        }
+        .test-panel button {
+            background-color: #2E8B57;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .test-panel button:hover {
+            background-color: #1a5632;
+        }
+        .test-panel .test-log {
+            height: 300px;
+            overflow-y: auto;
+            background-color: #222;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .test-panel .test-log p {
+            margin: 0;
+            padding: 2px 0;
+            border-bottom: 1px dotted #444;
+        }
+        .test-panel .test-log .success {
+            color: #4CAF50;
+        }
+        .test-panel .test-log .failure {
+            color: #F44336;
+        }
+        .test-panel .test-log .info {
+            color: #2196F3;
+        }
+        .test-panel .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>ROBE MAN</h1>
+                <p class="tagline">로브맨이 펼치는 유튜브 이야기</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">로브맨 소개</a></li>
+                    <li><a href="seasons.html">시즌별 콘텐츠</a></li>
+                    <li><a href="topics.html">주제별 콘텐츠</a></li>
+                    <li><a href="insights.html">인사이트</a></li>
+                    <li><a href="popular.html">인기 콘텐츠</a></li>
+                    <li><a href="resources.html">자료실</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button type="submit">검색</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>웹사이트 테스트</h1>
+            <p>로브맨 웹사이트의 기능 및 반응형 디자인 테스트</p>
+        </div>
+    </section>
+
+    <section class="test-instructions">
+        <div class="container">
+            <h2 class="section-title">테스트 안내</h2>
+            
+            <div class="test-content">
+                <p>이 페이지는 로브맨 웹사이트의 기능과 반응형 디자인을 테스트하기 위한 페이지입니다. 오른쪽 하단의 테스트 패널을 통해 다양한 테스트를 실행할 수 있습니다.</p>
+                
+                <h3>테스트 항목</h3>
+                <ul>
+                    <li><strong>기본 기능 테스트</strong>: 페이지 로드, 로고, 네비게이션, 푸터 등 기본 요소 확인</li>
+                    <li><strong>반응형 디자인 테스트</strong>: 모바일, 태블릿, 데스크톱 등 다양한 화면 크기에서의 레이아웃 확인</li>
+                    <li><strong>네비게이션 테스트</strong>: 메뉴 링크, 현재 페이지 활성화, 페이지 내 네비게이션 확인</li>
+                    <li><strong>검색 기능 테스트</strong>: 검색 박스, 검색 입력 필드, 검색 버튼, 용어 사전 검색 확인</li>
+                    <li><strong>필터링 기능 테스트</strong>: 주제별 필터, 시즌 탭 등 필터링 기능 확인</li>
+                </ul>
+                
+                <h3>테스트 방법</h3>
+                <ol>
+                    <li>오른쪽 하단의 테스트 패널에서 테스트 버튼을 클릭합니다.</li>
+                    <li>테스트 결과가 패널에 표시됩니다.</li>
+                    <li>반응형 디자인 테스트의 경우, 브라우저 창 크기를 조절하여 다양한 화면 크기에서 테스트할 수 있습니다.</li>
+                    <li>모든 테스트가 완료되면 테스트 결과를 확인하고 필요한 수정 사항을 적용합니다.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="test-results">
+        <div class="container">
+            <h2 class="section-title">테스트 결과</h2>
+            
+            <div class="test-summary">
+                <div id="test-summary-content">
+                    <p>테스트를 실행하면 여기에 결과가 표시됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="test-panel">
+        <button class="close-btn">&times;</button>
+        <h2>웹사이트 테스트 패널</h2>
+        <div class="test-controls">
+            <button id="test-all">모든 테스트</button>
+            <button id="test-basic">기본 기능</button>
+            <button id="test-responsive">반응형 디자인</button>
+            <button id="test-navigation">네비게이션</button>
+            <button id="test-search">검색 기능</button>
+            <button id="test-filtering">필터링 기능</button>
+        </div>
+        <div class="test-log" id="test-log">
+            <p class="info">테스트 버튼을 클릭하여 테스트를 시작하세요.</p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>ROBE MAN</h2>
+                    <p>로브맨이 펼치는 유튜브 이야기</p>
+                </div>
+                <div class="footer-links">
+                    <h3>바로가기</h3>
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="about.html">로브맨 소개</a></li>
+                        <li><a href="seasons.html">시즌별 콘텐츠</a></li>
+                        <li><a href="topics.html">주제별 콘텐츠</a></li>
+                        <li><a href="insights.html">인사이트</a></li>
+                        <li><a href="popular.html">인기 콘텐츠</a></li>
+                        <li><a href="resources.html">자료실</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>소셜 미디어</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCTTqmxp7S5NE6TcJJlTZTsQ" target="_blank">유튜브</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 로브맨 아카이브. 이 웹사이트는 로브맨 유튜브 채널의 비공식 아카이브입니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="test.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const testLog = document.getElementById('test-log');
+            const testSummary = document.getElementById('test-summary-content');
+            const closeBtn = document.querySelector('.close-btn');
+            
+            // 콘솔 로그 오버라이드
+            const originalConsoleLog = console.log;
+            console.log = function(message) {
+                originalConsoleLog.apply(console, arguments);
+                
+                const logEntry = document.createElement('p');
+                
+                if (message.includes('성공')) {
+                    logEntry.classList.add('success');
+                } else if (message.includes('실패')) {
+                    logEntry.classList.add('failure');
+                } else {
+                    logEntry.classList.add('info');
+                }
+                
+                logEntry.textContent = message;
+                testLog.appendChild(logEntry);
+                testLog.scrollTop = testLog.scrollHeight;
+                
+                // 테스트 요약 업데이트
+                updateTestSummary();
+            };
+            
+            // 테스트 요약 업데이트
+            function updateTestSummary() {
+                const successCount = document.querySelectorAll('.test-log .success').length;
+                const failureCount = document.querySelectorAll('.test-log .failure').length;
+                const infoCount = document.querySelectorAll('.test-log .info').length;
+                
+                testSummary.innerHTML = `
+                    <h3>테스트 요약</h3>
+                    <p><strong>성공:</strong> ${successCount} 항목</p>
+                    <p><strong>실패:</strong> ${failureCount} 항목</p>
+                    <p><strong>정보:</strong> ${infoCount} 항목</p>
+                    <p><strong>총 테스트:</strong> ${successCount + failureCount} 항목</p>
+                `;
+                
+                if (failureCount > 0) {
+                    testSummary.innerHTML += `
+                        <div class="test-recommendations">
+                            <h3>권장 사항</h3>
+                            <p>실패한 테스트 항목을 확인하고 수정하세요. 자세한 내용은 테스트 로그를 참조하세요.</p>
+                        </div>
+                    `;
+                } else if (successCount > 0) {
+                    testSummary.innerHTML += `
+                        <div class="test-recommendations">
+                            <h3>권장 사항</h3>
+                            <p>모든 테스트가 성공적으로 완료되었습니다. 웹사이트를 배포할 준비가 되었습니다.</p>
+                        </div>
+                    `;
+                }
+            }
+            
+            // 테스트 버튼 이벤트 리스너
+            document.getElementById('test-all').addEventListener('click', function() {
+                clearTestLog();
+                console.log('모든 테스트 시작');
+                testBasicFunctionality();
+                testResponsiveDesign();
+                testNavigation();
+                testSearch();
+                testFiltering();
+                console.log('모든 테스트 완료');
+            });
+            
+            document.getElementById('test-basic').addEventListener('click', function() {
+                clearTestLog();
+                console.log('기본 기능 테스트 시작');
+                testBasicFunctionality();
+                console.log('기본 기능 테스트 완료');
+            });
+            
+            document.getElementById('test-responsive').addEventListener('click', function() {
+                clearTestLog();
+                console.log('반응형 디자인 테스트 시작');
+                testResponsiveDesign();
+                console.log('반응형 디자인 테스트 완료');
+            });
+            
+            document.getElementById('test-navigation').addEventListener('click', function() {
+                clearTestLog();
+                console.log('네비게이션 테스트 시작');
+                testNavigation();
+                console.log('네비게이션 테스트 완료');
+            });
+            
+            document.getElementById('test-search').addEventListener('click', function() {
+                clearTestLog();
+                console.log('검색 기능 테스트 시작');
+                testSearch();
+                console.log('검색 기능 테스트 완료');
+            });
+            
+            document.getElementById('test-filtering').addEventListener('click', function() {
+                clearTestLog();
+                console.log('필터링 기능 테스트 시작');
+                testFiltering();
+                console.log('필터링 기능 테스트 완료');
+            });
+            
+            // 테스트 로그 초기화
+            function clearTestLog() {
+                testLog.innerHTML = '';
+            }
+            
+            // 패널 닫기 버튼
+            closeBtn.addEventListener('click', function() {
+                document.querySelector('.test-panel').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
